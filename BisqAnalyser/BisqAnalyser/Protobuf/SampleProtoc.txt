@@ -1,0 +1,1 @@
+﻿protoc -I=C:\filepath\BisqAnalyser\BisqAnalysisArtefact\BisqAnalyser\BisqAnalyser\Protobuf --csharp_out=C:\filepath\BisqAnalyser\BisqAnalysisArtefact\BisqAnalyser\BisqAnalyser C:\filepath\BisqAnalyser\BisqAnalysisArtefact\BisqAnalyser\BisqAnalyser\Protobuf/Bisq.proto

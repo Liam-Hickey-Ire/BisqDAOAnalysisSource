@@ -1,0 +1,1 @@
+Gnereate Bisq protobuf file called Bisq.cs - see README.md

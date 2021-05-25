@@ -1,0 +1,10 @@
+# Issuance Graph Script
+set title "BSQ Issuance Over Block Height"
+set xlabel "Block Height"
+set ylabel "Total Issuance"
+set terminal png size 1280,720
+set output 'Plots\\IssuanceOverBlockHeight.png'
+set xrange [570000:640000]
+set yrange [0:*]
+set format y '%.0f'
+plot "Data\\IssuanceOverBlockHeight.dat" using 1:2 with lines title "Issuance Over Block Height"

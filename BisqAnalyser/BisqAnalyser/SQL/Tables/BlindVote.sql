@@ -1,0 +1,10 @@
+﻿IF OBJECT_ID ('dbo.blindVote') IS NULL 
+	CREATE TABLE dbo.blindVote (
+		Id BIGINT NOT NULL PRIMARY KEY,
+		Hash VARBINARY(2000),
+		Date BIGINT NOT NULL,
+		EncryptedVotes VARBINARY(MAX),
+		EncryptedMeritList VARBINARY(MAX),
+		Stake BIGINT NOT NULL,
+		TxId VARCHAR(1000) NOT NULL
+	)

@@ -1,0 +1,10 @@
+﻿IF OBJECT_ID ('dbo.issuance') IS NULL 
+	CREATE TABLE dbo.issuance (
+		Id INT NOT NULL PRIMARY KEY,
+		MapKey VARCHAR(300) NOT NULL,
+		Amount BIGINT NOT NULL,
+		ChainHeight INT NOT NULL,
+		IssuanceType VARCHAR(300) NOT NULL,
+		PubKey VARCHAR(300) NOT NULL,
+		TxId VARCHAR(300) NOT NULL
+	)

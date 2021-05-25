@@ -1,0 +1,7 @@
+﻿IF OBJECT_ID ('dbo.address') IS NULL 
+	CREATE TABLE dbo.address (
+		Id BIGINT NOT NULL PRIMARY KEY,
+		Hash VARBINARY(200) NOT NULL,
+		Type TINYINT NOT NULL,
+		ClusterId BIGINT NOT NULL,
+	)

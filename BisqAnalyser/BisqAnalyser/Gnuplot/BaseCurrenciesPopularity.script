@@ -1,0 +1,12 @@
+# Bisq Base Currency Popularity Chart
+set title "Bisq Base Currency Popularity"
+set xlabel "Base Currency"
+set ylabel "Total Trades (Log Base 10 Scale)"
+set terminal png size 3840,2160
+set output 'Plots\\BaseCurrencyPopularity.png'
+set format y '%.0f'
+set logscale y 10
+set xtics rotate by 45 right
+set offset 0.5
+set yrange [0:*]
+plot "Data\\BaseCurrencies.dat" using 2:xtic(1) with boxes title "Base Currency Total Trades"

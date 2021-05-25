@@ -1,0 +1,12 @@
+# Bisq Trades Graph Script
+set title "Bisq Trade Price Over Time (US Dollar)"
+set xlabel "Date"
+set ylabel "Trade Price (Average Per Day)"
+set terminal png size 1280,720
+set output 'Plots\\TradesPriceOverTimeDollar.png'
+set xdata time
+set timefmt "%d/%m/%Y"
+set xrange ["01/01/2016":"01/02/2020"]
+set format x "%m/%Y
+set format y '%.0f'
+plot "Data\\TradePriceOverTimeDollar.dat" using 1:2 with lines title "Trade Price Over Time"
