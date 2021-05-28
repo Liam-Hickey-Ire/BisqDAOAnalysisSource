@@ -66,7 +66,7 @@ Once the Bisq.cs Protobuf class has been generated, ensure the class in placed i
 
 #### Bisq Git Scraper
 
-
+The Bisq Git Scraper is a separate application contained within this project. It is used to retrieve tags for BSQ addresses from Bisq compensation proposals, specifically tragetting proposals that were made before the launch of the Bisq DAO as proposals made after the launch can be tagged using Bisq peer-to-peer data. The Bisq Git Scraper should work out of the box with an up to date insatllation of Python.
 
 #### NuGet Packages Used
 
